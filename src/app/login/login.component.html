@@ -1,0 +1,18 @@
+<div>
+  <input nz-input placeholder="username" [(ngModel)]="valueUsername" />
+</div>
+<div>
+  <input nz-input placeholder="password" [(ngModel)]="valuePassword" />
+</div>
+<div>
+  <button nz-button nz-type="default" (click)='handleLogin()'>登录</button>
+</div>
+
+<nz-modal
+      [(nzVisible)]="isVisible"
+      nzTitle="温馨提示"
+      (nzOnCancel)="handleCancel()"
+      (nzOnOk)="handleOk()"
+    >
+      <p>用户名密码错误</p>
+    </nz-modal>
