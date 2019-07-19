@@ -1,88 +1,12 @@
 <nz-layout class="layout">
-    <nz-header>
+    <nz-header style="padding-left: 0;padding-right: 0" >
       <div class="logo"></div>
+      <button class="logoutButton" nz-button nzType="default" routerLink="/login">退出</button>
       <ul nz-menu [nzTheme]="'dark'" [nzMode]="'horizontal'" style="line-height: 64px;">
-        <li nz-menu-item>nav 1</li>
-        <li nz-menu-item>nav 2</li>
-        <li nz-menu-item>nav 3</li>
+        <li nz-menu-item><a routerLink="getting-started">快速上手</a></li>
+        <li nz-menu-item><a routerLink="customize-theme">定制主题</a></li>
+        <li nz-menu-item><a routerLink="components">Components</a></li>
       </ul>
     </nz-header>
-    <nz-layout>
-      <nz-sider [nzWidth]="200" style="background:#fff">
-        <ul nz-menu [nzMode]="'inline'" style="height:100%">
-          <li nz-submenu>
-            <span title>通用</span>
-            <ul>
-              <li nz-menu-item routerLink="button" >Button 按钮</li>
-              <li nz-menu-item>Icon 图标</li>
-              <li nz-menu-item>Typography排版</li>
-            </ul>
-          </li>
-          <li nz-submenu>
-            <span title><i nz-icon type="laptop"></i>布局</span>
-            <ul>
-              <li nz-menu-item>option5</li>
-              <li nz-menu-item>option6</li>
-              <li nz-menu-item>option7</li>
-              <li nz-menu-item>option8</li>
-            </ul>
-          </li>
-          <li nz-submenu>
-            <span title><i nz-icon type="notification"></i>导航</span>
-            <ul>
-              <li nz-menu-item>option9</li>
-              <li nz-menu-item>option10</li>
-              <li nz-menu-item>option11</li>
-              <li nz-menu-item>option12</li>
-            </ul>
-          </li>
-          <li nz-submenu>
-              <span title><i nz-icon type="notification"></i>数据录入</span>
-              <ul>
-                <li nz-menu-item>option9</li>
-                <li nz-menu-item>option10</li>
-                <li nz-menu-item>option11</li>
-                <li nz-menu-item>option12</li>
-              </ul>
-            </li>
-            <li nz-submenu>
-                <span title><i nz-icon type="notification"></i>数据展示</span>
-                <ul>
-                  <li nz-menu-item>option9</li>
-                  <li nz-menu-item>option10</li>
-                  <li nz-menu-item>option11</li>
-                  <li nz-menu-item>option12</li>
-                </ul>
-            </li>
-            <li nz-submenu>
-                <span title><i nz-icon type="notification"></i>反馈</span>
-                <ul>
-                  <li nz-menu-item>option9</li>
-                  <li nz-menu-item>option10</li>
-                  <li nz-menu-item>option11</li>
-                  <li nz-menu-item>option12</li>
-                </ul>
-            </li>
-            <li nz-submenu>
-                <span title><i nz-icon type="notification"></i>其他</span>
-                <ul>
-                  <li nz-menu-item>option9</li>
-                  <li nz-menu-item>option10</li>
-                  <li nz-menu-item>option11</li>
-                  <li nz-menu-item>option12</li>
-                </ul>
-            </li>
-        </ul>
-      </nz-sider>
-      <nz-layout style="padding:0 24px 24px">
-        <nz-breadcrumb style="margin:16px 0;">
-          <nz-breadcrumb-item>Home</nz-breadcrumb-item>
-          <nz-breadcrumb-item>List</nz-breadcrumb-item>
-          <nz-breadcrumb-item>App</nz-breadcrumb-item>
-        </nz-breadcrumb>
-        <nz-content style="background:#fff; padding: 24px; min-height: 280px;">
-            <router-outlet></router-outlet>
-        </nz-content>
-      </nz-layout>
-    </nz-layout>
+    <router-outlet></router-outlet>
   </nz-layout>

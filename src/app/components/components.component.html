@@ -1,0 +1,109 @@
+<nz-layout>
+    <nz-sider [nzWidth]="200" style="background:#fff">
+      <ul nz-menu [nzMode]="'inline'" style="height:100%">
+        <li nz-submenu>
+          <span title>通用</span>
+          <ul>
+            <li nz-menu-item><a routerLink="button">Button 按钮</a></li>
+            <li nz-menu-item><a routerLink="icon">Icon 图标</a></li>
+            <li nz-menu-item ><a routerLink="typography">Typography 排版</a></li>
+          </ul>
+        </li>
+        <li nz-submenu>
+          <span title>布局</span>
+          <ul>
+            <li nz-menu-item>Grid 栅格</li>
+            <li nz-menu-item>Layout 布局</li>
+          </ul>
+        </li>
+        <li nz-submenu>
+          <span title>导航</span>
+          <ul>
+            <li nz-menu-item>Affix 固钉</li>
+            <li nz-menu-item>Breadcrumb 面包屑</li>
+            <li nz-menu-item>Dropdown 下拉菜单</li>
+            <li nz-menu-item>Menu 导航菜单</li>
+            <li nz-menu-item>PageHeader 页头</li>
+            <li nz-menu-item>Pagination 分页</li>
+            <li nz-menu-item>Steps 步骤条</li>
+          </ul>
+        </li>
+        <li nz-submenu>
+            <span title>数据录入</span>
+            <ul>
+              <li nz-menu-item>Autocomplete 自动完成</li>
+              <li nz-menu-item>Cascader 级联选择</li>
+              <li nz-menu-item>Checkbox 多选框</li>
+              <li nz-menu-item>DatePicker 日期选择框</li>
+              <li nz-menu-item>Form 表单</li>
+              <li nz-menu-item>Input 输入框</li>
+              <li nz-menu-item>InputNumber 数字输入框</li>
+              <li nz-menu-item>Mention 提及</li>
+              <li nz-menu-item>Radio 单选框</li>
+              <li nz-menu-item>Rate 评分</li>
+              <li nz-menu-item>Slider 滑动输入条</li>
+              <li nz-menu-item>Switch 开关</li>
+              <li nz-menu-item>TimePicker 时间选择框</li>
+              <li nz-menu-item>Transfer 穿梭框</li>
+              <li nz-menu-item>TreeSelect 树选择</li>
+              <li nz-menu-item>Upload 上传</li>
+            </ul>
+          </li>
+          <li nz-submenu>
+              <span title>数据展示</span>
+              <ul>
+                <li nz-menu-item>Avatar 头像</li>
+                <li nz-menu-item>Badge 徽标数</li>
+                <li nz-menu-item>Calendar 日历</li>
+                <li nz-menu-item>Card 卡片</li>
+                <li nz-menu-item>Carousel 走马灯</li>
+                <li nz-menu-item>Collapse 折叠面板</li>
+                <li nz-menu-item>Comment 评论</li>
+                <li nz-menu-item>Descriptions 描述列表</li>
+                <li nz-menu-item>Empty 空状态</li>
+                <li nz-menu-item>List 列表</li>
+                <li nz-menu-item>Popover 气泡卡片</li>
+                <li nz-menu-item>Statistic 统计</li>
+                <li nz-menu-item>Table 表格</li>
+                <li nz-menu-item>Tabs 标签页</li>
+                <li nz-menu-item>Tag 标签</li>
+                <li nz-menu-item>Timeline 时间轴</li>
+                <li nz-menu-item>Tooltip 文字提示</li>
+                <li nz-menu-item>Tree 树形控件</li>
+              </ul>
+          </li>
+          <li nz-submenu>
+              <span title>反馈</span>
+              <ul>
+                <li nz-menu-item>Alert 警告提示</li>
+                <li nz-menu-item>Drawer 抽屉</li>
+                <li nz-menu-item>Message 全局提示</li>
+                <li nz-menu-item>Modal 对话框</li>
+                <li nz-menu-item>Notification 通知提醒框</li>
+                <li nz-menu-item>Popconfirm 气泡确认框</li>
+                <li nz-menu-item>Progress 进度条</li>
+                <li nz-menu-item>Skeleton 载占位图</li>
+                <li nz-menu-item>Spin 加载中</li>
+              </ul>
+          </li>
+          <li nz-submenu>
+              <span title>其他</span>
+              <ul>
+                <li nz-menu-item>Anchor 锚点</li>
+                <li nz-menu-item>BackTop 回到顶部</li>
+                <li nz-menu-item>Divider 分割线</li>
+              </ul>
+          </li>
+      </ul>
+    </nz-sider>
+    <nz-layout style="padding:0 24px 24px">
+      <nz-breadcrumb style="margin:16px 0;">
+        <nz-breadcrumb-item>Home</nz-breadcrumb-item>
+        <nz-breadcrumb-item>List</nz-breadcrumb-item>
+        <nz-breadcrumb-item>App</nz-breadcrumb-item>
+      </nz-breadcrumb>
+      <nz-content style="background:#fff; padding: 24px; min-height: 280px;">
+          <router-outlet></router-outlet>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
