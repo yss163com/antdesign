@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router} from '@angular/router';
+import { MyServiceService } from '../my-service.service';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,16 @@ import { Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private myserver: MyServiceService) { }
 
   valueUsername: string;
   valuePassword: string;
   isVisible = false;
 
   ngOnInit() {
+    this.myserver.getHeroes().subscribe((data) => {
+      console.log(data);
+    });
   }
 
   handleLogin(): void {
