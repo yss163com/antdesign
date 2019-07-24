@@ -12,13 +12,14 @@ const routes: Routes = [
   {
     path: '',
     component: ComponentsComponent,
+    data: { breadcrumb: '容器' },
     children:
     [
-      { path: 'button', component: ButtonComponent },
-      { path: 'icon', component: IconComponent },
-      { path: 'button/hello', component: ButtonHelloComponent },
-      { path: 'icon/hello', component: IconHelloComponent },
-      { path: 'typography', component: TypographyComponent}
+      { path: 'button', component: ButtonComponent, data: { breadcrumb: '按钮' }},
+      { path: 'icon', component: IconComponent, data: { breadcrumb: '图标' }},
+      { path: 'button/hello', component: ButtonHelloComponent, data: { breadcrumb: 'helloworld' } },
+      { path: 'icon/hello', component: IconHelloComponent, data: { breadcrumb: 'helloworld' } },
+      { path: 'typography', component: TypographyComponent, data: { breadcrumb: '排版' }}
     ]
   }
 ];

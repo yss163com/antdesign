@@ -14,9 +14,12 @@ const routes: Routes = [
     component: NavBarComponent,
     children:
     [
+      { path: '', redirectTo: 'components', pathMatch: 'full' },
       { path: 'getting-started', component: GettingStartedComponent },
       { path: 'customize-theme', component: CustomizeThemeComponent },
-      { path: 'components', loadChildren: './components/components.module#ComponentsModule'}
+      { path: 'components',
+        loadChildren: './components/components.module#ComponentsModule'
+      }
     ]
   }
 ];
